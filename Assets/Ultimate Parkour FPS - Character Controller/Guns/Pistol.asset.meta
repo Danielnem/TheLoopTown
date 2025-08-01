@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 608b8d44dd9d20b428fb64ec29227101
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293000
+  packageName: Ultimate Parkour FPS - Character Controller
+  packageVersion: 1.0.2
+  assetPath: Assets/Ultimate Parkour FPS - Character Controller/Guns/Pistol.asset
+  uploadId: 735608

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 569beea246f63c54cb5e94689ae40770
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293000
+  packageName: Ultimate Parkour FPS - Character Controller
+  packageVersion: 1.0.2
+  assetPath: Assets/Ultimate Parkour FPS - Character Controller/Materials/GreenMat.mat
+  uploadId: 735608
