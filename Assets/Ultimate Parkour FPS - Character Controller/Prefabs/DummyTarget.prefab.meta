@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a038d7eaa3bd9fa45bf1c5476d95360a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293000
+  packageName: Ultimate Parkour FPS - Character Controller
+  packageVersion: 1.0.2
+  assetPath: Assets/Ultimate Parkour FPS - Character Controller/Prefabs/DummyTarget.prefab
+  uploadId: 735608

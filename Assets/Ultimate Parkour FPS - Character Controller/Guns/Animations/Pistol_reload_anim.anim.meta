@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: be28e683bd2a99d429a0d4e2a7acfa4a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293000
+  packageName: Ultimate Parkour FPS - Character Controller
+  packageVersion: 1.0.2
+  assetPath: Assets/Ultimate Parkour FPS - Character Controller/Guns/Animations/Pistol_reload_anim.anim
+  uploadId: 735608

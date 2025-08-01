@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7730d2bfa7422a44d8c5926e8c2d3947
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293000
+  packageName: Ultimate Parkour FPS - Character Controller
+  packageVersion: 1.0.2
+  assetPath: Assets/Ultimate Parkour FPS - Character Controller/Prefabs/Player Controller.prefab
+  uploadId: 735608

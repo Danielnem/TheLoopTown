@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: da81a50045aa78a468ff8e2f7bf5c2c4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293000
+  packageName: Ultimate Parkour FPS - Character Controller
+  packageVersion: 1.0.2
+  assetPath: Assets/Ultimate Parkour FPS - Character Controller/Guns/Rifle.asset
+  uploadId: 735608
