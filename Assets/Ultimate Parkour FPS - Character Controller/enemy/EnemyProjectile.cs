@@ -15,11 +15,11 @@ public class EnemyProjectile : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            HealthSystem health = collision.gameObject.GetComponent<HealthSystem>();
+            PlayerHealthSystem health = collision.gameObject.GetComponent<PlayerHealthSystem>();
             if (health != null)
             {
                 Vector3 knockbackDir = (collision.transform.position - transform.position).normalized;
-                health.TakeDamage(damage, knockbackDir); // You can tweak knockback amount
+                health.TakeDamage(damage, knockbackDir);
             }
         }
 
