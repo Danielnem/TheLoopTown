@@ -19,7 +19,7 @@ MonoBehaviour:
   range: 100
   shootSound: {fileID: 8300000, guid: 888324601bdfe7446bb54bca4f07ef84, type: 3}
   switchSound: {fileID: 8300000, guid: 9c04ba9da9568924881149e46c291d12, type: 3}
-  switchAnimation: {fileID: 7400000, guid: ccf0f0dae139a8e419d91ccb5efdd099, type: 2}
+  switchAnimation: {fileID: 0}
   automaticGun: 1
   ammo: 20
   magazines: 3

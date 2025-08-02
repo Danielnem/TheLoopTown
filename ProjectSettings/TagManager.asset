@@ -6,16 +6,17 @@ TagManager:
   tags:
   - Target
   - WeaponPickup
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
   - Level
   - Weapon
-  - 
+  - Player
   - 
   - 
   - 
