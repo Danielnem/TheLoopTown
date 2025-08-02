@@ -21,8 +21,8 @@ MonoBehaviour:
   switchSound: {fileID: 8300000, guid: c22ecba8622d21d44ac8851480e005f3, type: 3}
   switchAnimation: {fileID: 0}
   automaticGun: 0
-  ammo: 10
-  magazines: 3
+  ammo: 2147483647
+  magazines: 0
   recoilAmount: 3
   reloadSound: {fileID: 8300000, guid: 06cf9a0e16caf744b8a519a711b29085, type: 3}
   reloadAnimation: {fileID: 7400000, guid: be28e683bd2a99d429a0d4e2a7acfa4a, type: 2}

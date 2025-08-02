@@ -34,7 +34,7 @@ public class EnemySpawner : MonoBehaviour
             {
                 GameObject prefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Count)];
                 GameObject enemy = Instantiate(prefab, point.position, Quaternion.identity);
-                enemy.tag = "Enemy"; // Ensure tagging for clean-up
+                enemy.tag = "Target"; // Ensure tagging for clean-up
                 spawnedEnemies.Add(enemy);
             }
         }
