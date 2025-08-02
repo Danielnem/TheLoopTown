@@ -23,7 +23,16 @@ public class BasicEnemyAI : MonoBehaviour
 
     private void Awake()
     {
-        player = GameObject.Find("Player Controller").transform;
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+        {
+            player = playerObj.transform;
+        }
+        else
+        {
+            Debug.LogError("Enemy AI could not find player by tag!");
+        }
+
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -90,16 +99,20 @@ public class BasicEnemyAI : MonoBehaviour
     }
    
    private void Shoot()
-{
-    if (projectile != null && firePoint != null)
     {
+        if (projectile == null || firePoint == null)
+        {
+            Debug.LogWarning("Projectile or FirePoint not assigned!");
+            return;
+        }
+
         GameObject bullet = Instantiate(projectile, firePoint.position, firePoint.rotation);
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
         if (rb != null)
         {
-            rb.linearVelocity = firePoint.forward * 20f; // Adjust speed here
+            rb.linearVelocity = firePoint.forward * 20f;
         }
     }
-}
+
 
 }

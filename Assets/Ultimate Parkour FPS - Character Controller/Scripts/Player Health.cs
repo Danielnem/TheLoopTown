@@ -69,9 +69,10 @@ namespace UltimateParkourFPS
             Debug.Log("Player Died");
 
             // Disable movement script
-            MonoBehaviour movementScript = GetComponent<MonoBehaviour>(); // Change to your actual movement script
-            if (movementScript != null)
-                movementScript.enabled = false;
+            // Disable PlayerController movement script
+            PlayerController controller = GetComponent<PlayerController>();
+            if (controller != null)
+                controller.enabled = false;
 
             // Show "You Died" UI
             if (deathUI != null)
