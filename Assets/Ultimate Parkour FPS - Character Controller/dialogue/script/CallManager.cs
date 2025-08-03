@@ -59,12 +59,12 @@ public class CallManager : MonoBehaviour
         switch (type)
         {
             case CallUIManager.ResponseType.Positive:
-                npc.happiness += 10;
+                npc.happiness += 20;
                 break;
             case CallUIManager.ResponseType.Neutral:
                 break;
             case CallUIManager.ResponseType.Negative:
-                npc.happiness -= 10;
+                npc.happiness -= 20;
                 break;
         }
 
