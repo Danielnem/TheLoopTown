@@ -5,8 +5,15 @@ using UnityEngine.UI;
 
 public class CallManager : MonoBehaviour
 {
+    [Header("UI References")]
     public CallUIManager callUI;
+
+    [Header("NPC Data")]
     public List<NPCState> npcStates = new();
+
+    [Header("Ending Canvases")]
+    public GameObject heartbreakUI;
+    public GameObject loveEndingUI;
 
     private bool isCallRunning = false;
 
@@ -20,10 +27,14 @@ public class CallManager : MonoBehaviour
             npc.happinessMeter.minValue = 0;
             npc.happinessMeter.value = npc.happiness;
         }
+        // Hide ending canvases at start
+        if (heartbreakUI != null)
+            heartbreakUI.SetActive(false);
+        if (loveEndingUI != null)
+            loveEndingUI.SetActive(false);
 
         StartCoroutine(CallLoop());
     }
-
 
     IEnumerator CallLoop()
     {
@@ -59,12 +70,12 @@ public class CallManager : MonoBehaviour
         switch (type)
         {
             case CallUIManager.ResponseType.Positive:
-                npc.happiness += 20;
+                npc.happiness += 50;
                 break;
             case CallUIManager.ResponseType.Neutral:
                 break;
             case CallUIManager.ResponseType.Negative:
-                npc.happiness -= 20;
+                npc.happiness -= 50;
                 break;
         }
 
@@ -74,9 +85,54 @@ public class CallManager : MonoBehaviour
         if (npc.happiness <= 0)
         {
             Debug.Log($"{npc.name} is heartbroken. GAME OVER.");
-            // TODO: Show game over UI
+            TriggerHeartbreakEnding();
+            return;
+        }
+
+        if (AllNPCsMaxed())
+        {
+            Debug.Log("All NPCs at 100! YOU FOUND LOVE!");
+            TriggerLoveEnding();
+            return;
         }
 
         isCallRunning = false;
+    }
+
+    private bool AllNPCsMaxed()
+    {
+        foreach (var npc in npcStates)
+        {
+            if (npc.happiness < 100)
+                return false;
+        }
+        return true;
+    }
+
+    private void TriggerHeartbreakEnding()
+    {
+        if (heartbreakUI != null)
+            heartbreakUI.SetActive(true);
+
+        StartCoroutine(EndGame());
+    }
+
+    private void TriggerLoveEnding()
+    {
+        if (loveEndingUI != null)
+            loveEndingUI.SetActive(true);
+
+        StartCoroutine(EndGame());
+    }
+
+    private IEnumerator EndGame()
+    {
+        yield return new WaitForSeconds(10f);
+
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 }
