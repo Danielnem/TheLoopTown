@@ -1980,7 +1980,7 @@ Transform:
   m_GameObject: {fileID: 1488714366972575794}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.58, y: -0.214, z: 0.982}
+  m_LocalPosition: {x: 0.341, y: -0.214, z: 0.511}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11927,11 +11927,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swayEnabled: 1
-  step: 0.01
+  step: 0.1
   maxStep: 0.06
-  swayTiltEnabled: 1
-  rotationStep: 4
-  maxRotationStep: 5
+  swayTiltEnabled: 0
+  rotationStep: 1
+  maxRotationStep: 1
   headBobEnabled: 1
   directBobAmount: {x: 0.1, y: 0.1, z: 0.1}
   circularBobAmount: {x: 0.01, y: 0.01, z: 0.01}
@@ -14998,7 +14998,7 @@ Transform:
   m_GameObject: {fileID: 7346184031707515831}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.547, y: -0.403, z: 0.68}
+  m_LocalPosition: {x: 0.282, y: -0.403, z: 0.231}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:

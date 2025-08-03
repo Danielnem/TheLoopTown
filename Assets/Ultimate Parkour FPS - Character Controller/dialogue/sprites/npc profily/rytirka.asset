@@ -16,14 +16,18 @@ MonoBehaviour:
   neutralSprite: {fileID: 21300000, guid: 52e41bf2ba4ab05498f06a4b07270da2, type: 3}
   happySprite: {fileID: 21300000, guid: 98a8da81c4228c749a8dd20565f42795, type: 3}
   negativeSprite: {fileID: 21300000, guid: bf73b8a6b57e494448a540bdb67c9ec3, type: 3}
-  introLine: ja jsem ryt
+  introLine: "\"Good morrow, mine own sweeting; I have heard tell thou art presently
+    loosing shafts upon thy foes. Speak true\u2014doth this tale bear merit?\""
   options:
-  - text: mec
+  - text: '>"Yeah, I''m killin'' folk."'
     type: 0
-    resultText: jo meccccc
-  - text: ahoj
+    resultText: "\"Marvellous, verily I knew thou wert a mad wretch with a lust for
+      slaying \u2014 and by my troth, 'tis that which I do most adore in thee!\""
+  - text: '>"S-sorry, you''re breakin'' up (start making noises with your mouth)."'
     type: 1
-    resultText: cau
-  - text: nehoj
+    resultText: "\"Halloo? Halloo? I hear thee not! 'Tis no great trouble \u2014
+      I shall call upon thee anon.\"\n\n"
+  - text: '"No, absolutely not, I''m a normal person who don''t shoot folk."'
     type: 2
-    resultText: di do haje
+    resultText: '"By Saint Cyber George, ne''er did I reckon I had given mine heart
+      to such a craven soul! I do despise peace-lovers of thy sort!"'

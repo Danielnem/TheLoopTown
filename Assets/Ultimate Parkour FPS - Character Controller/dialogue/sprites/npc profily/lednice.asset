@@ -16,14 +16,21 @@ MonoBehaviour:
   neutralSprite: {fileID: 21300000, guid: 98a8da81c4228c749a8dd20565f42795, type: 3}
   happySprite: {fileID: 21300000, guid: 52e41bf2ba4ab05498f06a4b07270da2, type: 3}
   negativeSprite: {fileID: 21300000, guid: bf73b8a6b57e494448a540bdb67c9ec3, type: 3}
-  introLine: 'Ahoj ja jsem lednice '
+  introLine: '"Hello. Sorry if I''m disturbing you, but, I was just wondering...
+    do you think I''m ugly? See I''ve been looking at myself in the mirror lately
+    and... I just feel so... *wide*... I dunno, maybe I need to lose weight?'
   options:
-  - text: jj
+  - text: '>"Nawh, you''re beautiful just the way you are! I can store so much food
+      in you! Never change."'
     type: 0
-    resultText: yeeeey
-  - text: nn
+    resultText: '"Y-you think so? Alright, then... that made me feel a lot better,
+      thank you! I love you!"'
+  - text: '>"You could lose a few pounds. I mean, when I''m shooting people, I wanna
+      be nice and thin and fast."'
     type: 2
-    resultText: uwe
-  - text: nevim
+    resultText: '"O-oh... yes, I suppose you''re right. Thank you for being hones-
+      Wait a minute, did you say you are shooting people?! Are you serious? Is that
+      why I hear gunshots?... I think I need to go...'
+  - text: '>"I don''t know, I think you look alright."'
     type: 1
-    resultText: aha
+    resultText: '"... alright."'

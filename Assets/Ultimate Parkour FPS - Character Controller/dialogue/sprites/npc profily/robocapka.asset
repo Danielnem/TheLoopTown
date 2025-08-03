@@ -16,14 +16,16 @@ MonoBehaviour:
   neutralSprite: {fileID: 21300000, guid: 683dd191ab8dc184bbe5f83e7049bb12, type: 3}
   happySprite: {fileID: 21300000, guid: a033ae629a12c00498f5ba9ef08ee347, type: 3}
   negativeSprite: {fileID: 21300000, guid: 2b68f390904e41744b7bab1c957efe81, type: 3}
-  introLine: 'ahoj ja jsem robotice '
+  introLine: '"Hey! Are we still going on our date? I''m heading towards your home,
+    is that alright?"'
   options:
-  - text: jjj
+  - text: '>"''Course, darlin'', come right in. I''ll be right there!"'
     type: 0
-    resultText: yupoeeee
-  - text: nevim no
+    resultText: '"Yay! But do hurry, I'''
+  - text: '>"I''m not sure, think I''m gonna be a bit late. Twenty minutes, tops!"'
     type: 1
-    resultText: tak jo
-  - text: nnn
+    resultText: '"Oh, okay. No problem. Just- hey, do I hear shooting? Hello?"'
+  - text: '>"Can''t, sorry, I''m killin'' folks right now."'
     type: 2
-    resultText: mermer
+    resultText: '"What?! How could you? I had no idea you were such a darn scoundrel!
+      I think I need to be alone for a while."'
