@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: rytirka
   m_EditorClassIdentifier: 
   npcName: Rytirka
-  neutralSprite: {fileID: 21300000, guid: 52e41bf2ba4ab05498f06a4b07270da2, type: 3}
-  happySprite: {fileID: 21300000, guid: 98a8da81c4228c749a8dd20565f42795, type: 3}
-  negativeSprite: {fileID: 21300000, guid: bf73b8a6b57e494448a540bdb67c9ec3, type: 3}
+  neutralSprite: {fileID: 21300000, guid: 5926737fe7b3ebd4a884e805af42e2e2, type: 3}
+  happySprite: {fileID: 21300000, guid: b37f077959ad6334c84805cf1b0f7d05, type: 3}
+  negativeSprite: {fileID: 21300000, guid: eae1dafbb1cd7c2499525d2727a66024, type: 3}
   introLine: "\"Good morrow, mine own sweeting; I have heard tell thou art presently
     loosing shafts upon thy foes. Speak true\u2014doth this tale bear merit?\""
   options:
