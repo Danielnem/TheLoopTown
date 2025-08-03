@@ -3,7 +3,7 @@ using UltimateParkourFPS;
 
 public class EnemyProjectile : MonoBehaviour
 {
-    public float damage = 10f;
+    public float damage = 25f;
     public float lifeTime = 5f;
 
     void Start()
