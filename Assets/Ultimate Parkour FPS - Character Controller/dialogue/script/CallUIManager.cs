@@ -15,7 +15,7 @@ public class CallUIManager : MonoBehaviour
     public Slider responseTimerSlider;
 
     private bool isWaitingForResponse = false;
-    private float responseTimeLeft = 10f;
+    private float responseTimeLeft = 20f;
     private List<ResponseOption> currentOptions;
 
     [Header("Active Call Data")]
@@ -101,9 +101,9 @@ public class CallUIManager : MonoBehaviour
         responseButtons.SetActive(true);
 
         // Phase 2: Prepare slider for countdown
-        responseTimeLeft = 10f;
-        responseTimerSlider.maxValue = 10f;
-        responseTimerSlider.value = 10f;
+        responseTimeLeft = 20f;
+        responseTimerSlider.maxValue = 20f;
+        responseTimerSlider.value = 20f;
         responseTimerSlider.gameObject.SetActive(true);
 
         StartCoroutine(DelayedStartResponsePhase());
