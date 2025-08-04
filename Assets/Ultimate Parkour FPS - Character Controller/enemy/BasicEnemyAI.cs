@@ -29,7 +29,8 @@ public class BasicEnemyAI : MonoBehaviour
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
+
 
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
@@ -141,13 +142,19 @@ public class BasicEnemyAI : MonoBehaviour
         isDead = true;
         agent.isStopped = true;
 
-        animator.Play("metarig_011|dying");
-        
-        // Optionally disable collider, AI, shooting etc.
+        if (animator != null)
+        {
+            animator.SetTrigger("Die"); // Triggers transition to 'dying' animation
+        }
+        else
+        {
+            Debug.LogWarning("Animator is missing on enemy object!");
+        }
+
         GetComponent<Collider>().enabled = false;
         this.enabled = false; // Disable this script
 
-        Destroy(gameObject, 3f); // Destroy after death animation finishes
+        Destroy(gameObject, 3f); // Adjust time to match your animation length
     }
-}
 
+}

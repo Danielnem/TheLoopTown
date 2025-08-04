@@ -10,6 +10,12 @@ namespace UltimateParkourFPS
         public override WeaponScriptableObject scriptableObject() => gunSO;
         public GunSO gunScriptableObject() => gunSO;
 
+        [Header("Double Flash Settings")]
+        [SerializeField] private bool doubleFlash = false;
+        [SerializeField] private GameObject secondMuzzleFlash; // Assign this in Inspector
+        [SerializeField] private float secondFlashDelay = 0.03f; // Time after first flash
+
+
         private bool reloading;
         private int currAmmo;
         private int currMagaines;
@@ -117,10 +123,26 @@ namespace UltimateParkourFPS
 
         private IEnumerator FlashMuzzle()
         {
-            muzzleFlash.SetActive(true);
-            yield return new WaitForSeconds(flashDuration);
-            muzzleFlash.SetActive(false);
+            // First flash
+            if (muzzleFlash != null)
+            {
+                muzzleFlash.SetActive(true);
+                yield return new WaitForSeconds(flashDuration);
+                muzzleFlash.SetActive(false);
+            }
+
+            // Second flash if enabled
+            if (doubleFlash && secondMuzzleFlash != null)
+            {
+                yield return new WaitForSeconds(secondFlashDelay);
+
+                secondMuzzleFlash.SetActive(true);
+                yield return new WaitForSeconds(flashDuration);
+                secondMuzzleFlash.SetActive(false);
+            }
         }
+
+
 
         public void Reload()
         {

@@ -31,21 +31,30 @@ namespace UltimateParkourFPS
         }
 
         // take specified amount of damage
-        public void TakeDamage(float damageAmount, Vector3? knockbackDirection = null, float knockbackAmount = 1f)
+       public void TakeDamage(float damageAmount, Vector3? knockbackDirection = null, float knockbackAmount = 1f)
         {
-            health -= damageAmount; // decrease health
+            health -= damageAmount;
 
-            if (knockbackDirection != null) // if knockback enabled
+            if (knockbackDirection != null)
                 StartCoroutine(Knockback((Vector3)knockbackDirection, knockbackAmount));
 
-            // if health is less than zero
             if (health <= 0)
-                Destroy(gameObject); // destroy game object
+            {
+                BasicEnemyAI enemyAI = GetComponent<BasicEnemyAI>();
+                if (enemyAI != null)
+                {
+                    enemyAI.TakeDamage(9999f); // triggers animation-based death
+                }
+                else
+                {
+                    Destroy(gameObject); // fallback if no AI script exists
+                }
+            }
 
-            // update health UI text
             if (healthText != null)
                 healthText.text = health.ToString();
         }
+
 
         // lerp object position backwards
         private IEnumerator Knockback(Vector3 direction, float knockbackAmount)

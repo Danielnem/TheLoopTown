@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 2735365108501070142}
   - component: {fileID: 7174274136427760021}
   - component: {fileID: 7328422080913557815}
-  - component: {fileID: 810165291591787053}
   m_Layer: 3
   m_Name: EnemyPref (1) 1 1
   m_TagString: Target
@@ -155,29 +154,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthText: {fileID: 0}
+  animator: {fileID: 5089786338546072246}
+  agent: {fileID: 6513024025160281628}
   health: 100
---- !u!95 &810165291591787053
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2039904081965403912}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: a6b731822e2d6454483ce3c870883f7a, type: 3}
-  m_Controller: {fileID: 9100000, guid: 8c98395dbedd58f4ba79f8d2ea9c31c3, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6540824715895982529
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,5 +272,10 @@ PrefabInstance:
 --- !u!4 &1171676294389260492 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a6b731822e2d6454483ce3c870883f7a, type: 3}
+  m_PrefabInstance: {fileID: 1713646169846712103}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5089786338546072246 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: a6b731822e2d6454483ce3c870883f7a, type: 3}
   m_PrefabInstance: {fileID: 1713646169846712103}
   m_PrefabAsset: {fileID: 0}
